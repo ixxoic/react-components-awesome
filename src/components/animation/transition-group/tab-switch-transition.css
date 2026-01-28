@@ -1,0 +1,22 @@
+/* 标签页切换动画：左右滑动 + 淡入淡出 */
+.tab-switch-enter {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.tab-switch-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 300ms ease-in-out;
+}
+
+.tab-switch-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.tab-switch-exit-active {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 300ms ease-in-out;
+}

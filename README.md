@@ -86,3 +86,46 @@ npm run dev
 | KanbanBoard                   | 多列卡片拖拽、跨列移动、排序     | @dnd-kit/core、@dnd-kit/utilities | src/examples/KanbanDemo.jsx |
 | GridSnapDrag                  | 网格磁吸吸附、边界限制、回弹动画 | @dnd-kit/core、@dnd-kit/utilities | src/examples/GridSnapDemo.jsx |
 | CustomDragHandle              | 自定义拖拽手柄、内容区防误触     | @dnd-kit/core、@dnd-kit/utilities | src/examples/CustomHandleDemo.jsx |
+
+
+# React 优质组件仓库
+整理 React 生态中样式/交互优秀的开源组件，含完整的样式和动画逻辑。
+
+## 已整理组件
+### 1. shadcn/ui 组件（UI类）
+| 组件名 | 核心交互/动画 | 依赖 | 使用示例 |
+|--------|---------------|------|----------|
+| Button | hover 背景渐变、点击反馈 | @radix-ui/react-slot、class-variance-authority | src/examples/ShadcnDemo.jsx |
+| Dialog | 弹窗淡入/淡出、缩放动画 | @radix-ui/react-dialog、lucide-react | src/examples/ShadcnDemo.jsx |
+
+### 2. @dnd-kit/core 组件（拖拽交互类）
+| 组件/API 名称                  | 核心交互/动画                     | 依赖 | 使用示例 |
+|-------------------------------|----------------------------------|------|----------|
+| KanbanBoard                   | 多列卡片拖拽、跨列移动、排序     | @dnd-kit/core、@dnd-kit/utilities | src/examples/KanbanDemo.jsx |
+| GridSnapDrag                  | 网格磁吸吸附、边界限制、回弹动画 | @dnd-kit/core、@dnd-kit/utilities | src/examples/GridSnapDemo.jsx |
+| CustomDragHandle              | 自定义拖拽手柄、内容区防误触     | @dnd-kit/core、@dnd-kit/utilities | src/examples/CustomHandleDemo.jsx |
+
+### 3. react-transition-group 组件（过渡动画类）
+| 组件名                | 核心交互/动画                     | 依赖 | 使用示例 |
+|-----------------------|----------------------------------|------|----------|
+| CSSTransition         | 弹窗淡入/缩放、列表项滑入/滑出   | react-transition-group | src/examples/TransitionGroupDemo.jsx |
+| TransitionGroup       | 批量管理列表项进入/离开动画       | react-transition-group | src/examples/TransitionGroupDemo.jsx |
+
+### 3. react-transition-group 组件（过渡动画类）
+| 组件名                | 核心交互/动画                     | 依赖 | 使用示例 |
+|-----------------------|----------------------------------|------|----------|
+| CSSTransition         | 弹窗淡入/缩放、列表项滑入/滑出   | react-transition-group | src/examples/TransitionGroupDemo.jsx |
+| TransitionGroup       | 批量管理列表项进入/离开动画       | react-transition-group | src/examples/TransitionGroupDemo.jsx |
+| TabSwitchTransition   | 标签页左右滑动切换、淡入淡出     | react-transition-group | src/examples/TabSwitchDemo.jsx |
+
+可扩展优化（可选）
+多种动画效果：可以把 tab-switch-transition.css 改成淡入淡出、缩放等其他动画
+自定义动画时长：把 timeout 改成 props 传入，支持不同场景的动画速度
+动画顺序切换：修改 SwitchTransition 的 mode 属性（in-out / out-in）
+路由切换适配：结合 React Router 实现路由页面的切换动画
+
+### 3. react-transition-group 组件（过渡动画类）
+| 组件名                | 核心交互/动画                     | 依赖 | 使用示例 |
+|-----------------------|----------------------------------|------|----------|
+| NumberScrollTransition | 纯 JS 数字滚动动画（缓动效果） | react-transition-group | src/examples/NumberScrollDemo.jsx |
+| JSProgressBar         | 纯 JS 进度条动画（暂停/继续/动态配色） | react-transition-group | src/examples/JSProgressBarDemo.jsx |
